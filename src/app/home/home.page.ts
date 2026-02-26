@@ -31,7 +31,7 @@ export class HomePage {
       hora_termino: "9:20",
       status: "realizado"
     },
-    { descricao: "assistir tv", 
+    { descricao: "assistir tv!", 
       local: "casa",
       hora_inicio: "22:00",
       hora_termino: "00:30",
