@@ -1,0 +1,91 @@
+/* Fundo total rosa */
+.jardim-total {
+  --background: none;
+  background: linear-gradient(to bottom, #ffe6f0, #ffcce0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+  padding: 20px;
+}
+
+/* Tabela grande, centralizada */
+.floral-table {
+  width: 95%;
+  max-width: 1200px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(255,182,193,0.3);
+  background: rgba(255, 240, 245, 0.95);
+  font-size: 18px;
+}
+
+/* Cabeçalho rosa elegante */
+th {
+  background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+  color: white;
+  padding: 20px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Linhas */
+td {
+  padding: 18px 15px;
+  text-align: center;
+  color: #5a3b4d;
+  border-bottom: 1px solid #ffd1e0;
+}
+
+/* Linhas alternadas */
+tr:nth-child(even) {
+  background-color: #ffe6f0;
+}
+
+/* Hover suave */
+.floral-row:hover {
+  background-color: #ffccd9;
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+/* Títulos cursivos e maiores */
+.titulo {
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
+  color: #c0487e;
+  font-size: 22px;
+}
+
+/* Botões elegantes */
+.btn-floral {
+  --background: linear-gradient(90deg, #ff69b4, #ff85c1);
+  --color: white;
+  border-radius: 50px;
+  margin: 4px;
+  padding: 10px 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255,105,180,0.5);
+}
+
+.btn-floral:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 15px rgba(255,105,180,0.8);
+}
+
+.btn-floral.edit {
+  --background: linear-gradient(90deg, #ff85c1, #ffb6d2);
+}
+
+/* Ícones */
+ion-icon {
+  font-size: 22px;
+  vertical-align: middle;
+}

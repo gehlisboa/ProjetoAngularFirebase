@@ -1,6 +1,60 @@
 <ion-content [fullscreen]="true">
+<table border="2">
+    <tr>
+        <th>isbn</th>
+        <th>Título</th>
+        <th>Categoria</th>
+        <th>Ações</th>
+    </tr>
 
-    <ion-button color="secondary">Teste</ion-button>
+    <ng-container *ngFor="let livro of this.livros">
+        <tr>
+            <td>{{ livro.isbn }}</td>
+            <td>{{ livro.titulo }}</td>
+            <td> 
+                <ion-card>
+                    <ng-container *ngFor="let cat of livro.categoria">
+                    <ion-label>{{ cat.nome }}</ion-label>
+                    <br>
+                    </ng-container>
+                </ion-card>
+                
+            </td>
+            <td>
+                <ion-button>
+                    <ion-icon name="trash-outline"></ion-icon>
+                </ion-button>
+                <ion-button>
+                    <ion-icon name="create-outline"></ion-icon>
+                </ion-button>
+            </td>
+        </tr>
+    </ng-container>
+</table>
+
+<table>
+        <tr>
+        <th>nome</th>
+        <th>preco</th>
+    </tr>
+
+    <ng-container *ngFor="let produto of this.produtos">
+        <tr>
+            <td>{{ produto.nome }}</td>
+            <td>{{ produto.preco }}</td>
+          
+            <td>
+                <ion-button>
+                    <ion-icon name="trash-outline"></ion-icon>
+                </ion-button>
+                <ion-button>
+                    <ion-icon name="create-outline"></ion-icon>
+                </ion-button>
+            </td>
+        </tr>
+    </ng-container>
+
+</table>
     
     
 </ion-content>
