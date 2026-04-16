@@ -1,0 +1,45 @@
+/* altura total */
+ion-content, ion-row {
+  height: 100vh;
+}
+
+/* coluna esquerda com imagem */
+ion-col:first-child {
+  background-image: url('https://www.estadao.com.br/resizer/v2/CYISWDGO2JAWVELDOPQJMFKLEI.png?quality=80&auth=a59333f1e3ce049b167f78051c5e0c42cdfb596739b34b5494f3362d6d09700f&width=1262&height=710&smart=true');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* lado direito */
+ion-col:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* largura do form */
+ion-col[size="4"] {
+  max-width: 380px;
+  width: 100%;
+}
+
+/* título */
+ion-label:first-of-type {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* inputs */
+ion-item {
+  --min-height: 45px;
+  margin-bottom: 12px;
+}
+
+/* botão */
+ion-button {
+  margin-top: 15px;
+  border-radius: 10px;
+}
