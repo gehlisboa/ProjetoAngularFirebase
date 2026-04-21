@@ -3,19 +3,16 @@
   <ion-row class="ion-justify-content-center">
 
     <!-- ESQUERDA -->
-    <ion-col size="6">
-      <img src="https://www.estadao.com.br/resizer/v2/CYISWDGO2JAWVELDOPQJMFKLEI.png?quality=80&auth=a59333f1e3ce049b167f78051c5e0c42cdfb596739b34b5494f3362d6d09700f&width=1262&height=710&smart=true" width="100%" height="100%">
-    </ion-col>
-
+    <ion-col size="6" class="bg-image"></ion-col>
     <!-- DIREITA -->
-    <ion-col size="6">
+    <ion-col size="6" class="lado-direito">
 
-      <ion-label>Criar Conta</ion-label>
+     <ion-label class="titulo">Criar Conta</ion-label>
 
       <!-- ROW PARA DIMINUIR o input -->
       <ion-row class="ion-justify-content-center">
 
-        <ion-col size="4">
+        <ion-col size="8">
 
           <ion-item>
             <ion-label>Nome</ion-label>
@@ -37,26 +34,30 @@
             <ion-input type="password"></ion-input>
           </ion-item>
 
-          <ion-button size="small" expand="block" color="medium">
-            Criar conta
-          </ion-button>
+            <ion-button expand="block" class="btn-criar">
+          Criar Conta
+        </ion-button>
 
-          <ion-button size="small" expand="block" color="medium">
-            Criar conta
-          </ion-button>
+        <div class="login-text">Login com</div>
 
-          <ion-button size="small" expand="block" color="medium">
-            Criar conta
-          </ion-button>
+        <ion-button class="facebook">
+        <ion-icon name="logo-facebook" slot="start"></ion-icon>
+        Facebook
+        </ion-button>
 
-          <ion-button size="small" expand="block" color="medium">
-            Criar conta
-          </ion-button>
+       <ion-button class="twitter">
+        <ion-icon name="logo-twitter" slot="start"></ion-icon>
+        Twitter
+       </ion-button>
 
-          <ion-button size="small" expand="block" color="medium">
-            Criar conta
-          </ion-button>
+       <ion-button class="google">
+        <ion-icon name="logo-google" slot="start"></ion-icon>
+        Google
+       </ion-button>
 
+       <div class="divider-footer">
+  <span>Porsche</span>
+</div>
         </ion-col>
 
       </ion-row>
